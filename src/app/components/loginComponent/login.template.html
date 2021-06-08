@@ -1,0 +1,70 @@
+<div fxLayout="row wrap" style="background: lightblue;" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false" fxFill>
+  <div fxLayout="column wrap" fxFlex="40" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+    <form #registerForm="ngForm">
+      <mat-card>
+        <mat-card-title align="center">REGISTER</mat-card-title>
+
+        <mat-card-subtitle align="center">Register With Us Today</mat-card-subtitle>
+
+        <mat-card-content align="center">
+          <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+            <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+              <input matInput [(ngModel)]="registerForm.firstName" name="firstName" placeholder="First Name" [required]="true">
+              <mat-icon matPrefix>person</mat-icon>
+            </mat-form-field>
+            <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+              <input matInput [(ngModel)]="registerForm.lastName" name="lastName" placeholder="Last Name" [required]="true">
+              <mat-icon matPrefix>person</mat-icon>
+            </mat-form-field>
+            <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+              <input matInput [(ngModel)]="registerForm.email" name="email" placeholder="Email" [required]="true">
+              <mat-icon matPrefix>mail</mat-icon>
+            </mat-form-field>
+            <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+              <input matInput [(ngModel)]="registerForm.password" name="password" placeholder="Password" [required]="true">
+              <mat-icon matPrefix>lock</mat-icon>
+            </mat-form-field>
+            <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+              <input matInput [(ngModel)]="registerForm.confirmPassword" name="confirmPassword" placeholder="Confirm Password" [required]="true">
+              <mat-icon matPrefix>lock</mat-icon>
+            </mat-form-field>
+            <div fxLayout="row wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false"><button mat-raised-button color="primary">Register </button></div>
+          </div>
+        </mat-card-content>
+
+        <mat-card-actions align="center">
+          <p>
+            Already A User? <a>Login</a> Here</p>
+        </mat-card-actions>
+      </mat-card>
+    </form>
+  </div>
+  <div fxLayout="column wrap" fxFlex="40" fxLayoutAlign="start stretch" [fxShow]="false" [fxHide]="true">
+    <form #registerForm="ngForm">
+      <mat-card>
+        <mat-card-title align="center">REGISTER</mat-card-title>
+
+        <mat-card-subtitle align="center">Register With Us Today</mat-card-subtitle>
+
+        <mat-card-content align="center">
+          <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+            <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+              <input matInput [(ngModel)]="registerForm.email" name="email" placeholder="Email" [required]="true">
+              <mat-icon matPrefix>mail</mat-icon>
+            </mat-form-field>
+            <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+              <input matInput [(ngModel)]="registerForm.password" name="password" placeholder="Password" [required]="true">
+              <mat-icon matPrefix>lock</mat-icon>
+            </mat-form-field>
+            <div fxLayout="row wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false"><button mat-raised-button color="accent">Login</button></div>
+          </div>
+        </mat-card-content>
+
+        <mat-card-actions align="center">
+          <p>
+            Not A User? <a>Register</a> Here</p>
+        </mat-card-actions>
+      </mat-card>
+    </form>
+  </div>
+</div>
